@@ -1,5 +1,6 @@
 # JavaScript: Why does 3 + true = 4?
 JavaScript can be a *weird* langauge at times. In this article we'll explore 8 different equations that explain just a few of the JS quirks you should be aware of.
+
 ---
 
 ### Adding a Number to a Boolean
@@ -24,6 +25,8 @@ We get true back for both equations. Now that we know the values that `true` and
 -[ ] 3
 -[x] 4
 -[ ] 5
+
+---
 
 ### Adding A String to a Number
 What happens when we add a string to an actual number? Run the code below and lets see if the answer is what you expect:
@@ -71,6 +74,8 @@ Based on what we've learned so far, what do you think would happen here?
 -[ ] 252
 -[x] 262
 -[ ] 2512
+
+---
 
 ### Using the negative operator
 What if we attempt to negate a string with the negative operator and then add it to a number? For example, `-"50" + 50`. What would the answer be? Let's look at an example:
