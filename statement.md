@@ -19,7 +19,7 @@ console.log(false == 0);
 
 We get true back for both equations. Now that we know the values that `true` and `false` coerce to, try answering this quiz question correctly:
 
-?[What is `3 + true + true + false - true`]
+?[What is 3 + true + true + false - true]
 -[ ] 2
 -[ ] 3
 -[x] 4
@@ -66,8 +66,42 @@ Here’s the chain of events:
 
 Based on what we've learned so far, what do you think would happen here?
 
-?[What is `25 + true + "2"`]
+?[What is 25 + true + "2"]
 -[ ] 28
 -[ ] 252
 -[x] 262
 -[ ] 2512
+
+### Using the negative operator
+What if we attempt to negate a string with the negative operator and then add it to a number? For example, `-"50" + 50`. What would the answer be? Let's look at an example:
+
+```javascript runnable
+console.log('String + Number:', "50" + 50);
+console.log('Negative + String + Number:', -"50" + 50);
+```
+
+As expected, our String + Number result is `"5050"` due to string concatenation. Howver, the negation in the second equation changes things. The minus sign before `"50"` is a unary minus operator that will actually **coerce** the string into a number and make it negative. Thus, our equation becomes `-50 + 50` which equals `0`.
+
+Seeing as the minus operator coerced our string value into a number, what happens if we use the minus operator on a different value of string? Let's look at this example: `-"giddyup" + 409`. JavaScript is going to try to coerce our `"giddyup"` string into a number value. But will it be able to? Run the code below:
+
+ ```javascript runnable
+console.log(-"giddyup" + 409);
+```
+
+When JavaScript fails to coerce a number in the example above, we are left with NaN (Not A Number).
+
+---
+
+### Final Quiz
+Now it's time to combine everything we've learned in this article and answer one final question. Are you up for it?
+
+?[What is 25 + -"2" - false + "10"]
+-[ ] 12
+-[x] 2310
+-[ ] 2710
+-[ ] 252010
+
+---
+
+### You made it!
+Good work! I hope you enjoyed my article. This article was originally published at [codeburst.io](https://codeburst.io/javascript-why-does-3-true-4-and-7-other-tricky-equations-9dd13cb2a92a)
