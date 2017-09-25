@@ -1,4 +1,4 @@
-title: 'JavaScript: Why does 3 + true = 4?'
+title: 'JavaScript: Why does 3 + true = 4? (And Other Quirks)'
 plan:
 - title: Node.js Snippet
   statement: statement.md
