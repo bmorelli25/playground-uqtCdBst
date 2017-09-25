@@ -1,4 +1,4 @@
-# Welcome!
+# Build a Twitter Bot with Node.js!
 
 This Node.js template lets you get started quickly with a simple one-page playground.
 
@@ -6,7 +6,7 @@ This Node.js template lets you get started quickly with a simple one-page playgr
 console.log('Hello World!');
 ```
 
-# Welcome!
+### Welcome!
 
 This Node.js template lets you get started quickly with a simple one-page playground.
 
