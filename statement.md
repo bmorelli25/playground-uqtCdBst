@@ -11,7 +11,7 @@ console.log(3 + true);
 console.log(3 + false);
 ```
 
-In the above code we add 3 to `true` and then 3 to `false`. Our answers are `4`, and `3`, respectively. What we can determine from this example is that JavaScript coerces a `true` boolean into the value of `1`, and a `false` boolean into the value of `2`. Let's set up an equality equation to test this theory:
+In the above code we add 3 to `true` and then 3 to `false`. Our answers are `4`, and `3`, respectively. What we can determine from this example is that JavaScript coerces a `true` boolean into the value of `1`, and a `false` boolean into the value of `0`. Let's set up an equality equation to test this theory:
 
 ```javascript runnable
 console.log(true == 1);
