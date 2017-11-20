@@ -1,5 +1,5 @@
 # JavaScript: Why does 3 + true = 4?
-JavaScript can be a *weird* langauge at times. In this article we'll explore 8 different equations that explain just a few of the JS quirks you should be aware of.
+JavaScript can be a *weird* language at times. In this article we'll explore 8 different equations that explain just a few of the JS quirks you should be aware of.
 
 ---
 
